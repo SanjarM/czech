@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="30; URL=webserver cz.html">
+<head>
+	<title>Отопление</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: black">
+	<h1 style="text-align: center; color: white">Отопление</h1>
+	<div style="margin-left: 200px;"> 
+      	<form method="post" action='/awp/webserver cz.html'>
+        <table class="table table-dark table-hover" style="width: 200px; align-content: center;">
+        <td>НАСОС</td>
+        <td>:="переменная":      
+         <form  method="post" action='/awp/webserver cz.html'>
+        <button type="submit" class="btn btn-danger" style="width: 80px;">OFF</button>
+        <input type="hidden" name='"переменная"' value="0">
+      </form>
+
+      <form style="float: left;" method="post" action='/awp/webserver cz.html'>
+            
+            <button type="submit" class="btn btn-success" style="width: 80px;" >ON</button>
+            <input type="hidden" name='"переменная"' value="1">
+
+      </form></td>
+        <td>ОБОГРЕВАТЕЛЬ</td>
+        <td>:="переменная":
+              <form  method="post" action='/awp/webserver cz.html'>
+        <button type="submit" class="btn btn-danger" style="width: 80px;">OFF</button>
+        <input type="hidden" name='"переменная"' value="0">
+      </form>
+
+      <form style="float: left;" method="post" action='/awp/webserver cz.html'>
+            
+            <button type="submit" class="btn btn-success" style="width: 80px;" >ON</button>
+            <input type="hidden" name='"переменная"' value="1">
+
+      </form></td>
+        <td>ВОЗД КЛАПАН</td>
+        <td>:="переменная":
+              <form  method="post" action='/awp/webserver cz.html'>
+        <button type="submit" class="btn btn-danger" style="width: 80px;">OFF</button>
+        <input type="hidden" name='"переменная"' value="0">
+      </form>
+
+      <form style="float: left;" method="post" action='/awp/webserver cz.html'>
+            
+            <button type="submit" class="btn btn-success" style="width: 80px;" >ON</button>
+            <input type="hidden" name='"переменная"' value="1">
+
+      </form></td>
+        <td>ИСКРА</td>
+        <td>:="переменная":
+              <form  method="post" action='/awp/webserver cz.html'>
+        <button type="submit" class="btn btn-danger" style="width: 80px;">OFF</button>
+        <input type="hidden" name='"переменная"' value="0">
+      </form>
+
+      <form style="float: left;" method="post" action='/awp/webserver cz.html'>
+            
+            <button type="submit" class="btn btn-success" style="width: 80px;" >ON</button>
+            <input type="hidden" name='"переменная"' value="1">
+
+      </form></td>
+
+        <td>24/7</td>
+        <td>:="переменная":
+              <form  method="post" action='/awp/webserver cz.html'>
+        <button type="submit" class="btn btn-danger" style="width: 80px;">OFF</button>
+        <input type="hidden" name='"переменная"' value="0">
+      </form>
+
+      <form style="float: left;" method="post" action='/awp/webserver cz.html'>
+            
+            <button type="submit" class="btn btn-success" style="width: 80px;" >ON</button>
+            <input type="hidden" name='"переменная"' value="1">
+
+      </form></td>
+
+        </table>
+      </form>
+
+<table class="table table-dark table-hover" style="width: 200px;">
+   <td>Температура масла</td>
+   <td>:="переменная":</td>
+
+   <td>Температура воды</td>
+   <td>:="переменная":</td>
+
+</table>
+
+<table class="table table-dark table-hover" style="width: 200px;">
+   <td>Уставка на масло</td>
+   <td>:="переменная": 
+   <input type="text" name='"Максимальная температура"' maxlength="8"></p>
+   <input type="submit" value="Записать">
+   </td>
+
+
+   <td>Уставка на воду</td>
+   <td>:="переменная":
+   <input type="text" name='"Максимальная температура"' maxlength="8"></p>
+   <input type="submit" value="Записать">
+   </td>
+
+</table>
+
+<form method="post" action='/awp/webserver cz.html'>
+  <table class="table table-dark table-hover" style="width: 500px;">
+ <thead>
+      <tr>
+        <th>День недели</th>
+        <th>Час включения</th>
+        <th> Минута включения</th>
+        <th>Час выключения</th>
+        <th> Минута выключения</th>
+        <th>Час включения</th>
+        <th> Минута включения</th>
+        <th>Час выключения</th>
+        <th> Минута выключения</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Понедельник</td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+
+      </tr>
+            <tr>
+        <td>Вторник</td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+
+      </tr>
+            <tr>
+        <td>Среда</td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+
+      </tr>
+            <tr>
+        <td>Четверг</td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+
+      </tr>
+
+            <tr>
+        <td>Пятница</td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+
+      </tr>
+
+            <tr>
+        <td>Суббота</td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+
+      </tr>
+            <tr>
+        <td>Воскресенье</td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+        <td><input type="text" name='"Период полива"' maxlength="2" style="width: 50px;"></td>
+
+  
+      </tr>
+      <td><input type="submit" value="Записать"></td>
+      
+    </tbody>
+  </table>
+
+</form>
+
+
+
+
+
+
+</div>
+</body>
+</html>
